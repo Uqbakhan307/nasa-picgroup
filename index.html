@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured News</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    transform: scale(1.05); /* Slightly increase the size */
+}
+
+h6 {
+    font-size: 1rem;
+    color: #333;
+}
+
+p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+ 
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bg-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-overlay img {
+    filter: brightness(50%); /* Darkens the image for text visibility */
+}
+
+.position-absolute {
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+}
+
+p.lead {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+}
+
+p.text-danger {
+    font-size: 1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.image-overlay {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover img {
+  opacity: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.overlay-text span {
+  font-size: 1.2rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  background: url('https://via.placeholder.com/1920x1080') center center/cover no-repeat;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for opacity effect */
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* Above the overlay */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); /* Adds shadow for better visibility */
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.hero-content .btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.hero-content .btn:hover {
+  background-color: #dc3545; /* Change background color to red */
+  color: #fff; /* Change text color to white */
+  transform: scale(1.1); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+</style>
+<body>
+    <div class="container my-4">
+        <!-- Heading Section -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fw-bold">Featured News</h2>
+            <p class="text-danger fw-bold mb-0">More NASA News</p>
+        </div>
+        <div class="row mt-3">
+            <!-- Main Large News Section -->
+            <div class="col-lg-8 col-md-12">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/700x400" class="card-img-top" alt="Main News">
+                    <div class="card-body">
+                        <p class="card-text text-uppercase text-muted mb-1">6 min read</p>
+                        <h5 class="card-title">Thanksgiving Celebrations in Space</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Side Smaller News Section -->
+            <div class="col-lg-4 col-md-12">
+                <!-- Smaller News Item 1 -->
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                        <p class="card-text text-uppercase text-muted mb-1">4 min read</p>
+                        <h5 class="card-title">Discovery Alert: a 'Hot Neptune' in a Tight Orbit</h5>
+                    </div>
+                </div>
+                <!-- Smaller News Item 2 -->
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                        <p class="card-text text-uppercase text-muted mb-1">5 min read</p>
+                        <h5 class="card-title">NASA Data Reveals Role of Green Spaces in Cooling Cities</h5>
+                    </div>
+                </div>
+                <!-- Smaller News Item 3 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                        <p class="card-text text-uppercase text-muted mb-1">5 min read</p>
+                        <h5 class="card-title">NASA's Europa Clipper: Millions of Miles Down, Instruments Deploying</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-4">
+        <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-lg-6 col-md-12 d-flex">
+                <div class="card flex-row align-items-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="Article Image">
+                    <div>
+                        <p class="text-uppercase text-muted mb-1">4 min read</p>
+                        <h6 class="fw-bold mb-0">NASA, JAXA XRISM Mission Looks Deeply Into 'Hidden' Stellar System</h6>
+                        <p class="text-muted">Article</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 2 -->
+            <div class="col-lg-6 col-md-12 d-flex">
+                <div class="card flex-row align-items-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="Article Image">
+                    <div>
+                        <p class="text-uppercase text-muted mb-1">5 min read</p>
+                        <h6 class="fw-bold mb-0">Hats Off to NASA’s Webb: Sombrero Galaxy Dazzles in New Image</h6>
+                        <p class="text-muted">Article</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 3 -->
+            <div class="col-lg-6 col-md-12 d-flex">
+                <div class="card flex-row align-items-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="Article Image">
+                    <div>
+                        <p class="text-uppercase text-muted mb-1">2 min read</p>
+                        <h6 class="fw-bold mb-0">Hubble Captures an Edge-On Spiral with Curve Appeal</h6>
+                        <p class="text-muted">Article</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 4 -->
+            <div class="col-lg-6 col-md-12 d-flex">
+                <div class="card flex-row align-items-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="Article Image">
+                    <div>
+                        <p class="text-uppercase text-muted mb-1">3 min read</p>
+                        <h6 class="fw-bold mb-0">Ready, Set, Action! Our Sun is the Star in Dazzling Simulation</h6>
+                        <p class="text-muted">Article</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="position-relative text-white bg-overlay">
+        <!-- Background Image -->
+        <img src="https://via.placeholder.com/1920x1080" alt="Warm Up Your Holidays" class="img-fluid w-100">
+        
+        <!-- Overlay Content -->
+        <div class="position-absolute top-50 start-50 translate-middle w-75 text-center">
+            <h1 class="fw-bold display-5">Warm Up Your Holidays</h1>
+            <p class="lead mt-3">
+                Look no further than this cozy and relaxing fireplace — complete with four RS-25 rocket engines and 8.8 million pounds of thrust — to fill your hearth with light and power your party to the Moon!
+            </p>
+            <p class="fw-bold mt-4 text-danger">NASA Virtual Fireplace 🔴</p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Humans in Space</h2>
+    <p class="text-center text-secondary mb-5">Discover More <span class="text-danger">●</span></p>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="image-overlay">
+          <img src="https://via.placeholder.com/400x300" alt="Why Go to Space">
+          <div class="overlay-text">
+            <p>Why Go to Space <span class="text-danger">●</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="image-overlay">
+          <img src="https://via.placeholder.com/400x300" alt="Astronauts">
+          <div class="overlay-text">
+            <p>Astronauts <span class="text-danger">●</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="image-overlay">
+          <img src="https://via.placeholder.com/400x300" alt="Commercial Space">
+          <div class="overlay-text">
+            <p>Commercial Space <span class="text-danger">●</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="image-overlay">
+          <img src="https://via.placeholder.com/400x300" alt="Living in Space">
+          <div class="overlay-text">
+            <p>Living in Space <span class="text-danger">●</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-section">
+    <div class="overlay"></div>
+    
+    <div class="container text-center text-white hero-content">
+      <h1 class="display-4 fw-bold">Earth Information Center</h1>
+      <p class="mt-3">For more than 50 years, NASA satellites have provided data on Earth’s land, water, air, temperature, and climate. NASA’s Earth Information Center allows visitors to see how our planet is changing in six key areas: sea level rise and coastal impacts, health and air quality, wildfires, greenhouse gases, sustainable energy, and agriculture.</p>
+      <a href="#" class="btn btn-light mt-4">Start Exploring <span class="text-danger">●</span></a>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
