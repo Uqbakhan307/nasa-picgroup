@@ -207,6 +207,64 @@ body {
     font-size: 0.9rem;
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content h5 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .content h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .content h5 {
+    font-size: 1rem;
+  }
+}
+
+
+.image-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.image-box:hover {
+  transform: scale(1.02);
+}
+
+.image-text h5 {
+  font-size: 1.2rem;
+}
+
+.image-text p {
+  font-size: 0.9rem;
+}
 
 
 </style>
@@ -374,10 +432,63 @@ body {
     </div>
   </div>
   </div>
+
+  <div class="container my-5">
+    <!-- Today Section -->
+    <div class="text-uppercase text-muted fw-bold mb-2">Today</div>
+    <h1 class="fw-bold mb-4">Image Of The Day</h1>
+
+    <!-- Content Section -->
+    <div class="content">
+      <h5 class="fw-bold mb-3">Management and Program Analyst Tami Wisniewski</h5>
+      <p>
+        “I love my country. I love serving my country. I think that was ingrained in me in the military, where I grew to realize how lucky we are to live in America and have the freedoms that we have. When I returned from [my first duty station] in Germany, I separated from the Air Force for about nine months, but I missed it so much, I was like, ‘Well, I guess I could join the reserves.’ I did want to get my education. I was ready by then.
+      </p>
+      <p>
+        “So, I enrolled in school and went into the Reserves, and then 9/11 happened. That will change a person. I called my unit that afternoon and said, ‘Whatever you need, I’m ready.’ I was activated supporting the mission, but I didn’t deploy like my husband. [9/11] is what touched my life more than anything: how quickly things can change in the blink of an eye. That’s what strengthened my respect of the Air Force core values: service before self and integrity, and excellence in all we do.
+      </p>
+      <p>
+        “Then, when I got pregnant, I thought I might want to be home, so I continued in civil service and just fell in love with my kids. That’s when my relationship with loving the Air Force changed. It evolved. I still value all that time I had and served and the lessons I learned growing up [in the Air Force]. The biggest thing I have and will continue to pass on to my kids is respect for your country, even if you don’t follow the route I did. Respect your country and the people who serve it.”
+      </p>
+      <p class="text-muted">
+        –Tami Wisniewski, Management and Program Analyst, NASA’s Marshall Space Flight Center
+      </p>
+    </div>
+  </div>
+  <div class="container my-5">
+    <!-- Section Title -->
+    <h2 class="fw-bold mb-4">More NASA Images</h2>
+
+    <!-- Image Boxes -->
+    <div class="row g-4">
+      <!-- First Box -->
+      <div class="col-lg-6 col-md-12">
+        <div class="image-box">
+          <img src="https://via.placeholder.com/600x300" alt="Gallery 1" class="img-fluid">
+          <div class="image-text mt-2">
+            <h5 class="fw-bold mb-1">Holidays on the Space Station Gallery</h5>
+            <p class="text-muted">25 IMAGES</p>
+          </div>
+        </div>
+      </div>
+      <!-- Second Box -->
+      <div class="col-lg-6 col-md-12">
+        <div class="image-box">
+          <img src="https://via.placeholder.com/600x300" alt="Gallery 2" class="img-fluid">
+          <div class="image-text mt-2">
+            <h5 class="fw-bold mb-1">Astronaut Selfies Gallery</h5>
+            <p class="text-muted">20 IMAGES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
+  
   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
